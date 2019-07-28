@@ -21,6 +21,18 @@
   version = "v0.2.9"
 
 [[projects]]
+  digest = "1:12cb143f2148bf54bcd9fe622abac17325e85eeb1d84b8ec6caf1c80232108fd"
+  name = "github.com/lib/pq"
+  packages = [
+    ".",
+    "oid",
+    "scram",
+  ]
+  pruneopts = "UT"
+  revision = "3427c32cb71afc948325f299f040e53c1dd78979"
+  version = "v1.2.0"
+
+[[projects]]
   digest = "1:7c084e0e780596dd2a7e20d25803909a9a43689c153de953520dfbc0b0e51166"
   name = "github.com/mattn/go-colorable"
   packages = ["."]
@@ -77,7 +89,7 @@
   name = "golang.org/x/sys"
   packages = ["unix"]
   pruneopts = "UT"
-  revision = "94b544f455efde7a614f75a3e43a2a65bce93113"
+  revision = "fc99dfbffb4e5ed5758a37e31dd861afe285406b"
 
 [[projects]]
   digest = "1:8d8faad6b12a3a4c819a3f9618cb6ee1fa1cfc33253abeeea8b55336721e3405"
@@ -107,6 +119,9 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  input-imports = ["github.com/labstack/echo"]
+  input-imports = [
+    "github.com/labstack/echo",
+    "github.com/lib/pq",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1

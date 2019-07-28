@@ -1,0 +1,6 @@
+CREATE TABLE employees(
+  id SERIAL PRIMARY KEY NOT NULL,
+  name VARCHAR(150),
+  salary INT,
+  age SMALLINT
+)
